@@ -9,20 +9,30 @@
 <body>
     <div class="flex-container">
         <div class="box">
-            <p class="category-title">Synthesis</p>
-            <p id="lastSynthesis">Synthesize something!</p>
-            <button onclick="synthesisProcess()">Synthesize 1</button>
-        </div>
-        <div class="box">
             <p class="category-title">Element Inventory</p>
-            <p id="inventory"></p>
+            <p id="inventory"; style="white-space: pre-line"></p>
+            <p class="category-title">Molecule/Compound Inventory</p>
+            <p class="category-title">Item Inventory</p>
         </div>
         <div class="box">
+            <p class="category-title">Synthesis</p>
+            <p id="last-synthesis">Synthesize something!</p>
+            <button onclick="synthesisProcess()">Synthesize 1</button>
+
+            <p class="category-title">Assembly</p>
+            <p>This is where the idle part of the game will be.</p>
+            <p>Automatically generate elements, up to the rarest one in endgame.</p>
+
+        </div>
+        <div class="box">
+            <p class="category-title">Molecule Bonding</p>
+            <p class="category-title">Compounding</p>
+            <p class="category-title">Crafting</p>
         </div>
     </div>
 
     <div class="footer">
-        <p>pre-α v.0</p>
+        <p>pre-α v.0 - If you're seeing this, you're a playtester! Thank you for your help!</p>
     </div>
     <script src="main.js"></script>
 </body>
