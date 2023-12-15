@@ -42,7 +42,7 @@ function updateElementInventory() {
     // just displays the inventory
     let formattedInv = "";
     for (item in elementInventory) {
-        formattedInv += item + " " + elementInventory[item] + "x, ";
+        formattedInv += item + " " + elementInventory[item] + "x\n";
     }
     changeInnerHTML('inventory', formattedInv.replace(/, $/g, ''));
 }
@@ -74,7 +74,7 @@ function synthesisProcess() {
     for (let i = 0; i < synthesizerSize; i++) {
         drops.push(synthesisRoll());
     }
-    changeInnerHTML('lastSynthesis', 'Synthesized: ' + formatSynthesizerRolls(drops));
+    changeInnerHTML('last-synthesis', 'Synthesized: ' + formatSynthesizerRolls(drops));
 
     let dropsForInventory = dropArrayToObject(drops);
     for (item in dropsForInventory) {
